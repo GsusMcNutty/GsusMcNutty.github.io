@@ -8,13 +8,25 @@ body {
 
 /*Todo: image for banner*/
 .banner {
-    display: grid;
-    grid-template-columns: 1fr;
     background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     text-align: center;
     height: 200px;
     margin: auto;
     text-align: center;
+}
+
+.banner-g1 {
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.banner-g2 {
+    background-color: black;
+    background-image: url(/images/unitySTOCK.jpg);
+    background-repeat: no-repeat;
+    background-size: 500px;
 }
 
 .developer-box {
@@ -35,11 +47,6 @@ body {
     padding: 20px;
 }
 
-.headerback {
-    background-image: url("/images/PPSLogo.png");
-    background-size: 600px;
-}
-
 .media-holder {
     background-color: gray;
     color: black;
@@ -51,33 +58,32 @@ body {
 }
 
 .pages-buttons {
-    width: 100%;
+    background-color: black;
+    width: auto;
     height: auto;
+    opacity: 1;
 }
 
 .pages-holder {
-    background-color: white;
     display: grid;
     grid-template-columns: 100px 1fr 1fr;
     height: 100px;
 }
 
 .pages-text {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-.pages-buttons:hover {
-    color: black;
-    background-color: antiquewhite;
+.pages-text:hover {
     text-decoration: underline;
-    background-color: antiquewhite;
 }
 
-.logo a {
+.logo-home {
     background-color: red;
     background-image: url("/images/PPSLogo.png");
     background-size: 100px;
@@ -88,6 +94,11 @@ body {
     text-indent: -999999px;
     height: 100px;
     width: 100px;
+    opacity: .6;
+}
+
+.logo-home:hover {
+    opacity: 1;
 }
 
 .section-1 {
